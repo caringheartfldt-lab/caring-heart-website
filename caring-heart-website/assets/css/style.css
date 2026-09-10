@@ -188,7 +188,7 @@ html.dark .hero-card-content{background:rgba(20,28,31,.58)}
 .section.compact{padding:58px 0}
 .section-tint{background:linear-gradient(135deg,var(--surface-soft),var(--surface-blue))}
 .section-green{background:linear-gradient(135deg,var(--surface-green),var(--surface-blue))}
-.section-heading{max-width:720px;margin-bottom:34px}
+.section-heading{max-width:820px;margin-bottom:34px}
 .section-heading.center{margin-inline:auto;text-align:center}
 .section-heading p{color:var(--muted)}
 .kicker{
