@@ -1,0 +1,46 @@
+(function(){
+  const root = document.documentElement;
+  const langToggle = document.getElementById('langToggle');
+  const themeToggle = document.getElementById('themeToggle');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  function applyLanguage(lang){
+    document.querySelectorAll('[data-en][data-zh]').forEach(el=>{
+      el.textContent = lang === 'zh' ? el.dataset.zh : el.dataset.en;
+    });
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    if(langToggle) langToggle.textContent = lang === 'zh' ? 'EN' : '中';
+    localStorage.setItem('chf-language',lang);
+  }
+
+  function applyTheme(theme){
+    root.classList.toggle('dark', theme === 'dark');
+    if(themeToggle) themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
+    localStorage.setItem('chf-theme',theme);
+  }
+
+  const savedLang = localStorage.getItem('chf-language') || 'en';
+  const savedTheme = localStorage.getItem('chf-theme') || 'light';
+  applyLanguage(savedLang);
+  applyTheme(savedTheme);
+
+  langToggle?.addEventListener('click',()=>applyLanguage(root.lang === 'zh-CN' ? 'en' : 'zh'));
+  themeToggle?.addEventListener('click',()=>applyTheme(root.classList.contains('dark') ? 'light' : 'dark'));
+  menuToggle?.addEventListener('click',()=>nav?.classList.toggle('open'));
+
+  nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+  document.querySelectorAll('[data-demo-form]').forEach(form=>{
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      const msg = root.lang === 'zh-CN'
+        ? '感谢您的关注！正式上线前请连接安全的表单/后台服务。'
+        : 'Thank you for reaching out! Connect this form to a secure backend/form service before launch.';
+      alert(msg);
+    });
+  });
+
+  const year = document.getElementById('year');
+  if(year) year.textContent = new Date().getFullYear();
+})();

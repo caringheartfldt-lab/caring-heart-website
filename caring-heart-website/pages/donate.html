@@ -1,4 +1,94 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Donate | Caring Heart Foundation</title><link rel="stylesheet" href="../assets/style.css"></head><body>
-<header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">♥</span>Caring Heart Foundation</a><button class="menu-toggle">☰</button><nav class="nav"><a href="../index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="university.html">Senior University</a><a href="events.html">Events</a><a href="volunteer.html">Volunteer</a><a href="impact.html">Impact</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="donate.html">Donate</a></nav><div class="tools"><button id="langToggle" class="icon-btn">中</button><button id="themeToggle" class="icon-btn">☾</button></div></header>
-<main><section class="page-hero"><span class="eyebrow">SUPPORT CARING HEART</span><h1 data-en="Help build a warmer community for seniors." data-zh="共同为长者建设一个更温暖的社区。">Help build a warmer community for seniors.</h1><p data-en="Your donation page can support one-time and recurring giving, designated campaigns, donor acknowledgments and secure hosted checkout." data-zh="捐赠页面可以支持一次性捐赠、定期捐赠、指定项目、捐赠确认及安全的第三方支付。">Your donation page can support one-time and recurring giving, designated campaigns, donor acknowledgments and secure hosted checkout.</p></section>
-<section class="content"><div class="card-grid three"><article class="card"><h2 data-en="One-time gift" data-zh="一次性捐赠">One-time gift</h2><p data-en="Connect to the organization's selected secure payment provider." data-zh="连接组织选定的安全支付平台。">Connect to the organization's selected secure payment provider.</p><a class="btn btn-primary" href="#" onclick="alert('Connect the official donation provider before launch.');return false" data-en="Donate Now" data-zh="立即捐赠">Donate Now</a></article><article class="card"><h2 data-en="Monthly giving" data-zh="每月捐赠">Monthly giving</h2><p data-en="Offer recurring gifts with donor-managed options through the payment provider." data-zh="通过支付平台提供可管理的定期捐赠。">Offer recurring gifts with donor-managed options through the payment provider.</p><a class="btn btn-secondary" href="#" onclick="alert('Connect the official recurring donation provider before launch.');return false" data-en="Give Monthly" data-zh="每月支持">Give Monthly</a></article><article class="card"><h2 data-en="Other ways to give" data-zh="其他支持方式">Other ways to give</h2><p data-en="Add checks, employer matching, in-kind gifts or other methods only when the organization supports them." data-zh="可根据组织实际情况增加支票、雇主配捐、实物捐赠等方式。">Add checks, employer matching, in-kind gifts or other methods only when the organization supports them.</p></article></div><div class="notice" style="margin-top:30px"><strong data-en="Important:" data-zh="重要提示：">Important:</strong> <span data-en="Donation tax language, receipts and solicitation disclosures must match the organization's actual legal and tax status." data-zh="捐赠税务说明、收据及慈善募捐披露必须与组织实际法律及税务身份一致。">Donation tax language, receipts and solicitation disclosures must match the organization's actual legal and tax status.</span></div></section></main><footer class="footer"><div class="footer-bottom"><span>© <span id="year"></span> Caring Heart Foundation.</span></div></footer><script src="../assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Caring Heart Foundation — community support, lifelong learning and meaningful opportunities for seniors in Central Florida.">
+<title>Donate | Caring Heart Foundation</title>
+<link rel="icon" href="../assets/images/logo.png" type="image/png">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html" aria-label="Caring Heart Foundation home">
+      <img src="../assets/images/logo.png" alt="Caring Heart Foundation logo">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="../index.html" data-en="Home" data-zh="首页">Home</a>
+      <a href="about.html" data-en="About Us" data-zh="关于我们">About Us</a>
+      <a href="programs.html" data-en="Programs" data-zh="服务项目">Programs</a>
+      <a href="events.html" data-en="Events" data-zh="活动">Events</a>
+      <a href="volunteer.html" data-en="Volunteer" data-zh="志愿者">Volunteer</a>
+      <a href="impact.html" data-en="Our Impact" data-zh="我们的影响">Our Impact</a>
+      <a href="contact.html" data-en="Contact" data-zh="联系我们">Contact</a>
+      <a class="nav-donate" href="donate.html" data-en="Donate" data-zh="捐赠">Donate</a>
+    </nav>
+    <div class="tools">
+      <button id="langToggle" class="icon-btn" aria-label="Switch language">中</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container">
+<div class="eyebrow" data-en="SUPPORT THE MISSION" data-zh="支持使命">SUPPORT THE MISSION</div>
+<h1 data-en="Help create a warmer community." data-zh="帮助建设更有温度的社区。">Help create a warmer community.</h1>
+<p data-en="Your support can help create learning opportunities, community activities and practical resources for older adults." data-zh="您的支持可以帮助建设学习机会、社区活动和面向长者的实际资源。">Your support can help create learning opportunities, community activities and practical resources for older adults.</p>
+</div></section>
+<section class="section"><div class="container">
+<div class="card-grid three">
+<article class="card"><div class="icon-badge">💜</div><h3 data-en="One-time gift" data-zh="一次性捐赠">One-time gift</h3><p data-en="Create a secure payment link or hosted donation form here before launch." data-zh="正式上线前，请在这里连接安全的支付链接或托管捐赠表单。">Create a secure payment link or hosted donation form here before launch.</p><a class="btn btn-primary" href="#" onclick="return false" data-en="Donation link placeholder" data-zh="捐赠链接占位">Donation link placeholder</a></article>
+<article class="card"><div class="icon-badge">🌱</div><h3 data-en="Monthly support" data-zh="每月支持">Monthly support</h3><p data-en="Recurring giving can help support predictable community programming when properly configured." data-zh="在安全、合规配置的前提下，定期捐赠有助于支持持续性的社区项目。">Recurring giving can help support predictable community programming when properly configured.</p><a class="btn btn-primary" href="#" onclick="return false" data-en="Recurring link placeholder" data-zh="定期捐赠链接占位">Recurring link placeholder</a></article>
+<article class="card"><div class="icon-badge">🤝</div><h3 data-en="Sponsor a program" data-zh="赞助项目">Sponsor a program</h3><p data-en="Businesses and community partners can explore sponsorship opportunities and in-kind support." data-zh="企业和社区伙伴可了解项目赞助及实物支持机会。">Businesses and community partners can explore sponsorship opportunities and in-kind support.</p><a class="btn btn-soft" href="contact.html" data-en="Talk with us" data-zh="联系我们">Talk with us</a></article>
+</div>
+<div style="height:20px"></div>
+<div class="notice" data-en="Donation and tax language should be finalized with the Foundation’s qualified legal/tax advisers and verified organizational status before accepting public donations online." data-zh="在正式接受网上公开捐赠前，应由基金会的合格法律/税务顾问审核捐赠与税务表述，并核实机构资质。">Donation and tax language should be finalized with the Foundation’s qualified legal/tax advisers and verified organizational status before accepting public donations online.</div></div></section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="../assets/images/logo.png" alt="Caring Heart Foundation">
+        <p data-en="Community warmth. A home for seniors." data-zh="社区的温度，长者的家园。">Community warmth. A home for seniors.</p>
+        <div class="pill-row">
+          <span class="pill" data-en="Central Florida" data-zh="佛罗里达州中部">Central Florida</span>
+          <span class="pill" data-en="Senior-focused" data-zh="专注长者服务">Senior-focused</span>
+        </div>
+      </div>
+      <div>
+        <h4 data-en="Programs" data-zh="服务项目">Programs</h4>
+        <a href="programs.html">🏠 <span data-en="What We Offer" data-zh="服务项目">What We Offer</span></a>
+        <a href="senior-university.html">🎓 <span data-en="Senior University" data-zh="长者大学">Senior University</span></a>
+        <a href="health-programs.html">🧘 <span data-en="Retirement Health Programs" data-zh="退休健康课程">Retirement Health Programs</span></a>
+        <a href="activity-center.html">☀️ <span data-en="Daytime Activity Center" data-zh="日间活动中心">Daytime Activity Center</span></a>
+      </div>
+      <div>
+        <h4 data-en="Community" data-zh="社区">Community</h4>
+        <a href="events.html">🎉 <span data-en="Events" data-zh="活动">Events</span></a>
+        <a href="volunteer.html">🤝 <span data-en="Volunteer" data-zh="志愿者">Volunteer</span></a>
+        <a href="impact.html">💚 <span data-en="Our Impact" data-zh="我们的影响">Our Impact</span></a>
+        <a href="contact.html">✉️ <span data-en="Contact" data-zh="联系我们">Contact</span></a>
+      </div>
+      <div>
+        <h4 data-en="Trust & Transparency" data-zh="信任与透明">Trust & Transparency</h4>
+        <a href="financials.html" data-en="Financials" data-zh="财务透明">Financials</a>
+        <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+        <a href="accessibility.html" data-en="Accessibility" data-zh="无障碍访问">Accessibility</a>
+        <a href="terms.html" data-en="Terms" data-zh="使用条款">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Caring Heart Foundation</span>
+      <span data-en="Site content and tax/legal status should be verified before public launch." data-zh="网站正式上线前，请核实机构的税务、法律及合规信息。">Site content and tax/legal status should be verified before public launch.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
