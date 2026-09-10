@@ -373,3 +373,9 @@ html.dark .footer{background:linear-gradient(135deg,#282536,#20333b 54%,#23372f)
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column}
 }
+
+html.dark .brand img,
+html.dark .footer-logo,
+html.dark .hero-logo{
+  filter: invert(1) brightness(1.8);
+}
