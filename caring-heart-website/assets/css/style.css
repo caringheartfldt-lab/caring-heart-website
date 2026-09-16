@@ -379,3 +379,87 @@ html.dark .footer-logo,
 html.dark .hero-logo{
   filter: invert(1) brightness(1.8);
 }
+
+/* ---------- Header: social icons pinned to far right ---------- */
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* push .tools (and everything after nav) to the far right */
+.nav { margin-left: auto; }
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+  margin-left: 4px;
+  border-left: 1px solid rgba(0, 0, 0, .12);
+}
+
+.header-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: inherit;
+  opacity: .8;
+  transition: opacity .2s ease, transform .2s ease, background .2s ease;
+}
+
+.header-socials a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, .06);
+}
+
+/* hide the header socials on small screens (they'll live in the footer / menu) */
+@media (max-width: 900px) {
+  .header-socials { display: none; }
+}
+
+/* ---------- Footer: centered social icons at the very bottom ---------- */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding-top: 28px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, .15); /* adjust if footer bg is light */
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: inherit;
+  opacity: .85;
+  background: rgba(255, 255, 255, .08);
+  transition: opacity .2s ease, transform .2s ease, background .2s ease;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, .18);
+}
+
+@media (max-width: 600px) {
+  .footer-socials { gap: 12px; }
+  .footer-socials a { width: 38px; height: 38px; }
+}
