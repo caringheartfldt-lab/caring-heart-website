@@ -470,3 +470,18 @@ html.dark .hero-logo{
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 html.dark .language-picker select{background:var(--surface);color:var(--text);border-color:var(--border)}
 @media(max-width:760px){.language-picker select{min-height:36px;font-size:.82rem;padding-left:10px;padding-right:25px}}
+
+
+.footer-guide{
+  margin-top:18px;
+  padding-top:16px;
+  border-top:1px solid var(--border);
+}
+.footer-guide a{
+  display:inline-block;
+  font-weight:700;
+  text-decoration:none;
+}
+.footer-guide a:hover{
+  text-decoration:underline;
+}

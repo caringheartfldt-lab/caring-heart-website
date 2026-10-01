@@ -35,3 +35,7 @@ A redesigned bilingual English/Chinese static website for Caring Heart Foundatio
 - Verify the Foundation's legal/tax status and public disclosures before publishing claims about tax deductibility or IRS determination.
 - Have any regulated care/health/insurance services reviewed by qualified professionals and implement required licenses/policies before offering those services directly.
 - Add photo/video assets to `assets/images/photos/` and `assets/videos/` as the site grows.
+
+## Website guide
+- `guide.html` provides a bilingual/trilingual website maintenance guide for content editors.
+- It documents the three language options (English, Simplified Chinese, Traditional Chinese), program pages, media folders, VS Code editing workflow, and pre-launch items.

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Caring Heart Foundation website user and content management guide.">
+<title>Website Guide | Caring Heart Foundation</title>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/icons.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Caring Heart Foundation home"><img src="assets/images/logo.png" alt="Caring Heart Foundation logo"></a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="index.html" data-en="Home" data-zh="首页" data-zh-tw="首頁">Home</a>
+      <a href="pages/about.html" data-en="About Us" data-zh="关于我们" data-zh-tw="關於我們">About Us</a>
+      <a href="pages/programs.html" data-en="Programs" data-zh="服务项目" data-zh-tw="服務項目">Programs</a>
+      <a href="pages/events.html" data-en="Events" data-zh="活动" data-zh-tw="活動">Events</a>
+      <a href="pages/volunteer.html" data-en="Volunteer" data-zh="志愿者" data-zh-tw="志願者">Volunteer</a>
+      <a href="pages/contact.html" data-en="Contact" data-zh="联系我们" data-zh-tw="聯繫我們">Contact</a>
+      <a class="nav-donate" href="pages/donate.html" data-en="Donate" data-zh="捐赠" data-zh-tw="捐贈">Donate</a>
+    </nav>
+    <div class="tools">
+      <label class="language-picker"><span class="sr-only">Language</span><select id="languageSelect" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option></select></label>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode">☾</button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container">
+  <div class="eyebrow" data-en="WEBSITE GUIDE" data-zh="网站使用说明" data-zh-tw="網站使用說明">WEBSITE GUIDE</div>
+  <h1 data-en="Caring Heart Foundation Website Guide" data-zh="爱心基金会网站使用说明" data-zh-tw="愛心基金會網站使用說明">Caring Heart Foundation Website Guide</h1>
+  <p data-en="A practical guide for updating the website, managing languages, adding photos and videos, and preparing the site for publication." data-zh="本说明用于帮助网站管理员更新网站内容、管理三种语言、添加照片和视频，并准备网站正式发布。" data-zh-tw="本說明用於協助網站管理員更新網站內容、管理三種語言、添加照片與影片，並準備網站正式發布。">A practical guide for updating the website, managing languages, adding photos and videos, and preparing the site for publication.</p>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="section-heading"><div class="kicker" data-en="1 / QUICK START" data-zh="1 / 快速开始" data-zh-tw="1 / 快速開始">1 / QUICK START</div><h2 data-en="How the website is organized" data-zh="网站结构" data-zh-tw="網站結構">How the website is organized</h2></div>
+<div class="card-grid four">
+<article class="card"><div class="icon-badge">🏠</div><h3>index.html</h3><p data-en="The home page. Update the main welcome message, priorities, featured programs and calls to action here." data-zh="首页。可在这里更新欢迎信息、年度重点、重点服务项目和行动按钮。" data-zh-tw="首頁。可在這裡更新歡迎資訊、年度重點、重點服務項目與行動按鈕。">The home page. Update the main welcome message, priorities, featured programs and calls to action here.</p></article>
+<article class="card"><div class="icon-badge">📄</div><h3>pages/</h3><p data-en="Contains the About, Programs, Events, Volunteer, Contact, Donation, policy and individual program pages." data-zh="包含关于我们、服务项目、活动、志愿者、联系我们、捐赠、政策以及各个服务项目页面。" data-zh-tw="包含關於我們、服務項目、活動、志願者、聯繫我們、捐贈、政策以及各個服務項目頁面。">Contains the About, Programs, Events, Volunteer, Contact, Donation, policy and individual program pages.</p></article>
+<article class="card"><div class="icon-badge">🎨</div><h3>assets/css/</h3><p data-en="Shared visual design. style.css controls colors, typography, layout, cards, buttons, responsive behavior and dark mode." data-zh="共享视觉样式。style.css 控制颜色、字体、布局、卡片、按钮、响应式显示和深色模式。" data-zh-tw="共享視覺樣式。style.css 控制顏色、字體、版面、卡片、按鈕、響應式顯示與深色模式。">Shared visual design. style.css controls colors, typography, layout, cards, buttons, responsive behavior and dark mode.</p></article>
+<article class="card"><div class="icon-badge">⚙️</div><h3>assets/js/</h3><p data-en="Shared behavior. app.js controls language selection, saved preferences, dark mode, mobile navigation and demo forms." data-zh="共享功能。app.js 控制语言选择、保存的偏好、深色模式、手机导航和演示表单。" data-zh-tw="共享功能。app.js 控制語言選擇、保存的偏好、深色模式、手機導覽與示範表單。">Shared behavior. app.js controls language selection, saved preferences, dark mode, mobile navigation and demo forms.</p></article>
+</div>
+</div></section>
+
+<section class="section section-soft"><div class="container">
+<div class="section-heading"><div class="kicker" data-en="2 / LANGUAGES" data-zh="2 / 三种语言" data-zh-tw="2 / 三種語言">2 / LANGUAGES</div><h2 data-en="English, Simplified Chinese and Traditional Chinese" data-zh="英文、简体中文和繁体中文" data-zh-tw="英文、簡體中文與繁體中文">English, Simplified Chinese and Traditional Chinese</h2></div>
+<div class="split">
+<div><h3 data-en="For website visitors" data-zh="访客使用" data-zh-tw="訪客使用">For website visitors</h3><p data-en="Use the language selector in the upper-right corner to choose English, 简体中文, or 繁體中文. The selection is remembered when moving between pages." data-zh="使用右上角的语言选择框，可以选择 English、简体中文或繁體中文。网站会记住选择，进入其他页面时继续使用该语言。" data-zh-tw="使用右上角的語言選擇框，可以選擇 English、簡體中文或繁體中文。網站會記住選擇，進入其他頁面時繼續使用該語言。">Use the language selector in the upper-right corner to choose English, 简体中文, or 繁體中文. The selection is remembered when moving between pages.</p></div>
+<div class="card"><h3 data-en="For content editors" data-zh="内容编辑" data-zh-tw="內容編輯">For content editors</h3><p data-en="Each translatable element normally uses data-en, data-zh and data-zh-tw. Keep all three attributes when changing a sentence." data-zh="需要翻译的文字通常使用 data-en、data-zh 和 data-zh-tw 三个属性。修改文字时请同时保留三种语言。" data-zh-tw="需要翻譯的文字通常使用 data-en、data-zh 和 data-zh-tw 三個屬性。修改文字時請同時保留三種語言。">Each translatable element normally uses <strong>data-en</strong>, <strong>data-zh</strong> and <strong>data-zh-tw</strong>. Keep all three attributes when changing a sentence.</p></div>
+</div>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="section-heading"><div class="kicker" data-en="3 / PROGRAMS" data-zh="3 / 服务项目" data-zh-tw="3 / 服務項目">3 / PROGRAMS</div><h2 data-en="Eight dedicated program pages" data-zh="八个独立服务项目页面" data-zh-tw="八個獨立服務項目頁面">Eight dedicated program pages</h2></div>
+<div class="card-grid four">
+<article class="card"><div class="icon-badge">🎓</div><h3>Senior University</h3><p>pages/senior-university.html</p></article>
+<article class="card"><div class="icon-badge">🧘</div><h3>Retirement Health Programs</h3><p>pages/health-programs.html</p></article>
+<article class="card"><div class="icon-badge">☀️</div><h3>Daytime Activity Center</h3><p>pages/activity-center.html</p></article>
+<article class="card"><div class="icon-badge">🍲</div><h3>Community Kitchen</h3><p>pages/community-kitchen.html</p></article>
+<article class="card"><div class="icon-badge">🏡</div><h3>In-home Care Services</h3><p>pages/in-home-care.html</p></article>
+<article class="card"><div class="icon-badge">🎶</div><h3>Talent & Hobby Classes</h3><p>pages/talent-hobby.html</p></article>
+<article class="card"><div class="icon-badge">🎉</div><h3>Banquet Hall</h3><p>pages/banquet-hall.html</p></article>
+<article class="card"><div class="icon-badge">🏡</div><h3>Asian Fair</h3><p>pages/asian-fair.html</p></article>
+</div>
+</div></section>
+
+<section class="section section-soft"><div class="container"><div class="section-heading"><div class="kicker" data-en="4 / PHOTOS & VIDEOS" data-zh="4 / 照片和视频" data-zh-tw="4 / 照片與影片">4 / PHOTOS & VIDEOS</div><h2 data-en="Adding your own media" data-zh="添加照片和视频" data-zh-tw="添加照片與影片">Adding your own media</h2></div>
+<div class="split">
+<div class="card"><h3>assets/images/photos/</h3><ol><li data-en="Copy optimized JPG, JPEG, PNG or WebP photos into this folder." data-zh="将优化后的 JPG、JPEG、PNG 或 WebP 照片复制到此文件夹。" data-zh-tw="將優化後的 JPG、JPEG、PNG 或 WebP 照片複製到此資料夾。">Copy optimized JPG, JPEG, PNG or WebP photos into this folder.</li><li data-en="Use descriptive file names, for example 2026-senior-university.jpg." data-zh="使用有意义的文件名，例如 2026-senior-university.jpg。" data-zh-tw="使用有意義的檔案名稱，例如 2026-senior-university.jpg。">Use descriptive file names, for example <strong>2026-senior-university.jpg</strong>.</li><li data-en="Add an appropriate alt description when placing a photo in HTML." data-zh="在 HTML 中使用照片时，为照片添加合适的 alt 描述。" data-zh-tw="在 HTML 中使用照片時，為照片添加合適的 alt 描述。">Add an appropriate alt description when placing a photo in HTML.</li></ol></div>
+<div class="card"><h3>assets/videos/</h3><ol><li data-en="Place local video files here if you decide to host them yourself." data-zh="如果以后自行托管视频，可将视频文件放在这里。" data-zh-tw="如果以後自行託管影片，可將影片檔案放在這裡。">Place local video files here if you decide to host them yourself.</li><li data-en="For large videos, consider YouTube or another video platform instead of storing large files in GitHub." data-zh="对于大型视频，建议使用 YouTube 等视频平台，而不是把大文件存入 GitHub。" data-zh-tw="對於大型影片，建議使用 YouTube 等影片平台，而不是把大檔案存入 GitHub。">For large videos, consider YouTube or another video platform instead of storing large files in GitHub.</li></ol></div>
+</div></div></section>
+
+<section class="section"><div class="container"><div class="section-heading"><div class="kicker" data-en="5 / EDITING" data-zh="5 / 修改网站" data-zh-tw="5 / 修改網站">5 / EDITING</div><h2 data-en="Basic editing workflow in VS Code" data-zh="使用 VS Code 的基本修改流程" data-zh-tw="使用 VS Code 的基本修改流程">Basic editing workflow in VS Code</h2></div>
+<div class="card-grid four">
+<article class="card"><div class="icon-badge">1</div><h3 data-en="Open the project" data-zh="打开项目" data-zh-tw="打開專案">Open the project</h3><p data-en="Open the caring-heart-website folder in VS Code." data-zh="在 VS Code 中打开 caring-heart-website 文件夹。" data-zh-tw="在 VS Code 中打開 caring-heart-website 資料夾。">Open the <strong>caring-heart-website</strong> folder in VS Code.</p></article>
+<article class="card"><div class="icon-badge">2</div><h3 data-en="Edit content" data-zh="修改内容" data-zh-tw="修改內容">Edit content</h3><p data-en="Change the appropriate HTML page. For translated text, update English, Simplified Chinese and Traditional Chinese together." data-zh="修改对应的 HTML 页面。对于需要翻译的文字，同时更新英文、简体中文和繁体中文。" data-zh-tw="修改對應的 HTML 頁面。對於需要翻譯的文字，同時更新英文、簡體中文與繁體中文。">Change the appropriate HTML page. For translated text, update all three languages together.</p></article>
+<article class="card"><div class="icon-badge">3</div><h3 data-en="Test locally" data-zh="本地测试" data-zh-tw="本地測試">Test locally</h3><p data-en="Open index.html in Chrome and test navigation, language selection, dark mode, buttons and mobile layout." data-zh="在 Chrome 中打开 index.html，测试导航、语言选择、深色模式、按钮和手机布局。" data-zh-tw="在 Chrome 中打開 index.html，測試導覽、語言選擇、深色模式、按鈕與手機版面。">Open index.html in Chrome and test navigation, language selection, dark mode, buttons and mobile layout.</p></article>
+<article class="card"><div class="icon-badge">4</div><h3 data-en="Publish" data-zh="发布" data-zh-tw="發布">Publish</h3><p data-en="Commit and push the changed files to your hosting repository, then verify the published site." data-zh="将修改后的文件提交并推送到网站托管仓库，然后检查线上网站。" data-zh-tw="將修改後的檔案提交並推送到網站託管儲存庫，然後檢查線上網站。">Commit and push the changed files to your hosting repository, then verify the published site.</p></article>
+</div></div></section>
+
+<section class="section section-green"><div class="container"><div class="section-heading"><div class="kicker" data-en="6 / BEFORE LAUNCH" data-zh="6 / 正式上线前" data-zh-tw="6 / 正式上線前">6 / BEFORE LAUNCH</div><h2 data-en="Important items still requiring real services" data-zh="正式上线前仍需配置的项目" data-zh-tw="正式上線前仍需配置的項目">Important items still requiring real services</h2></div>
+<div class="card-grid four">
+<article class="card"><h3>💳 Donation</h3><p data-en="The current donation page contains placeholder actions. Connect a secure donation processor before accepting payments." data-zh="当前捐赠页面仍包含演示按钮。正式接受捐款前，需要连接安全的捐赠支付服务。" data-zh-tw="目前捐贈頁面仍包含示範按鈕。正式接受捐款前，需要連接安全的捐贈支付服務。">The current donation page contains placeholder actions. Connect a secure donation processor before accepting payments.</p></article>
+<article class="card"><h3>📝 Forms</h3><p data-en="Contact and other forms currently use demo behavior. Connect them to a secure backend or form service." data-zh="联系我们等表单目前使用演示功能。正式使用前，需要连接安全的后端或表单服务。" data-zh-tw="聯繫我們等表單目前使用示範功能。正式使用前，需要連接安全的後端或表單服務。">Contact and other forms currently use demo behavior. Connect them to a secure backend or form service.</p></article>
+<article class="card"><h3>⚖️ Compliance</h3><p data-en="Verify organizational, tax, solicitation, privacy and any regulated-service requirements before publishing final claims or accepting donations." data-zh="正式发布前，请核实组织、税务、募款、隐私以及受监管服务相关要求。" data-zh-tw="正式發布前，請核實組織、稅務、募款、隱私以及受監管服務相關要求。">Verify organizational, tax, solicitation, privacy and any regulated-service requirements before publishing final claims or accepting donations.</p></article>
+<article class="card"><h3>📷 Media consent</h3><p data-en="Obtain appropriate permission before publishing identifiable photos or videos of participants, especially seniors." data-zh="发布可识别个人的照片或视频前，应取得适当授权，尤其是长者活动照片。" data-zh-tw="發布可識別個人的照片或影片前，應取得適當授權，尤其是長者活動照片。">Obtain appropriate permission before publishing identifiable photos or videos of participants, especially seniors.</p></article>
+</div></div></section>
+
+<section class="section"><div class="container"><div class="cta"><div class="kicker" data-en="QUICK REFERENCE" data-zh="快速参考" data-zh-tw="快速參考">QUICK REFERENCE</div><h2 data-en="The most commonly edited files" data-zh="最常修改的文件" data-zh-tw="最常修改的檔案">The most commonly edited files</h2><p><strong>Home:</strong> index.html<br><strong>Programs overview:</strong> pages/programs.html<br><strong>Events:</strong> pages/events.html<br><strong>About:</strong> pages/about.html<br><strong>Photos:</strong> assets/images/photos/<br><strong>Videos:</strong> assets/videos/<br><strong>Design:</strong> assets/css/style.css<br><strong>Languages, theme and navigation:</strong> assets/js/app.js</p></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div class="footer-grid"><div><img class="footer-logo" src="assets/images/logo.png" alt="Caring Heart Foundation"><p data-en="Community warmth. A home for seniors." data-zh="社区的温度，长者的家园。" data-zh-tw="社區的溫度，長者的家園。">Community warmth. A home for seniors.</p></div><div><h4 data-en="Website" data-zh="网站" data-zh-tw="網站">Website</h4><a href="index.html" data-en="Home" data-zh="首页" data-zh-tw="首頁">Home</a><a href="pages/programs.html" data-en="Programs" data-zh="服务项目" data-zh-tw="服務項目">Programs</a><a href="pages/contact.html" data-en="Contact" data-zh="联系我们" data-zh-tw="聯繫我們">Contact</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Caring Heart Foundation</span></div></div>
+      <div class="footer-guide"><a href="guide.html" data-en="Website Guide" data-zh="网站使用说明" data-zh-tw="網站使用說明">Website Guide</a></div>
+  </footer>
+<script src="assets/js/app.js"></script>
+</body></html>
