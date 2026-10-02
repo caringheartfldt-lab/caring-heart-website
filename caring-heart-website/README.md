@@ -39,3 +39,10 @@ A redesigned bilingual English/Chinese static website for Caring Heart Foundatio
 ## Website guide
 - `guide.html` provides a bilingual/trilingual website maintenance guide for content editors.
 - It documents the three language options (English, Simplified Chinese, Traditional Chinese), program pages, media folders, VS Code editing workflow, and pre-launch items.
+
+
+## Content integrated from Web20260916_On_hostinger
+- Added the verified contact details shown on the previous site.
+- Added the 2026 Asian Fair event details and the two source event images.
+- Added the previous site's community-story wording/date to the home page.
+- Existing Caring Heart layout, color palette, navigation, three-language system, and dark/light mode were retained.
