@@ -6,9 +6,9 @@
   const nav = document.querySelector('.nav');
 
   function applyLanguage(lang){
-    const normalized = lang === 'zh-TW' ? 'zh-TW' : (lang === 'zh-CN' ? 'zh-CN' : 'en');
+    const normalized = lang === 'zh-HK' ? 'zh-HK' : (lang === 'zh-CN' ? 'zh-CN' : 'en');
     document.querySelectorAll('[data-en]').forEach(el=>{
-      if(normalized === 'zh-TW' && el.dataset.zhTw !== undefined) el.textContent = el.dataset.zhTw;
+      if(normalized === 'zh-HK' && el.dataset.zhHk !== undefined) el.textContent = el.dataset.zhHk;
       else if(normalized === 'zh-CN' && el.dataset.zh !== undefined) el.textContent = el.dataset.zh;
       else el.textContent = el.dataset.en;
     });
@@ -23,7 +23,8 @@
     localStorage.setItem('chf-theme',theme);
   }
 
-  const savedLang = localStorage.getItem('chf-language') || 'en';
+  const storedLang = localStorage.getItem('chf-language');
+  const savedLang = storedLang === 'zh-TW' ? 'zh-HK' : (storedLang || 'en');
   const savedTheme = localStorage.getItem('chf-theme') || 'light';
   applyLanguage(savedLang);
   applyTheme(savedTheme);
@@ -37,7 +38,7 @@
   document.querySelectorAll('[data-demo-form]').forEach(form=>{
     form.addEventListener('submit',e=>{
       e.preventDefault();
-      const msg = root.lang === 'zh-TW'
+      const msg = root.lang === 'zh-HK'
         ? '感謝您的關注！正式上線前請連接安全的表單／後台服務。'
         : (root.lang === 'zh-CN' ? '感谢您的关注！正式上线前请连接安全的表单/后台服务。' : 'Thank you for reaching out! Connect this form to a secure backend/form service before launch.');
       alert(msg);

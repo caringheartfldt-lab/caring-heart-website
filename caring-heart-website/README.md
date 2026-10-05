@@ -1,6 +1,6 @@
 # Caring Heart Foundation Website v3
 
-A redesigned bilingual English/Chinese static website for Caring Heart Foundation.
+A redesigned trilingual English/Chinese static website for Caring Heart Foundation.
 
 ## Design changes
 - Inspired by the professional, structured Evergreen seniors-site style: page banners, mission/vision/value cards, compact sections, clear CTAs and consistent spacing.
@@ -38,7 +38,7 @@ A redesigned bilingual English/Chinese static website for Caring Heart Foundatio
 
 ## Website guide
 - `guide.html` provides a bilingual/trilingual website maintenance guide for content editors.
-- It documents the three language options (English, Simplified Chinese, Traditional Chinese), program pages, media folders, VS Code editing workflow, and pre-launch items.
+- It documents the three language options (English, Simplified Chinese, Hong Kong Traditional Chinese), program pages, media folders, VS Code editing workflow, and pre-launch items.
 
 
 ## Content integrated from Web20260916_On_hostinger
