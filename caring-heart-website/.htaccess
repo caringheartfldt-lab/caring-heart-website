@@ -1,0 +1,15 @@
+# Caring Heart Foundation - production security headers
+# HTTPS is required for HSTS. Remove HSTS only if the site will not always use HTTPS.
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; frame-ancestors 'self'"
+</IfModule>
+
+# Do not serve common development/secret files.
+<FilesMatch "^(\.env|.*\.(bak|backup|old|orig|psd|sql|zip))$">
+  Require all denied
+</FilesMatch>

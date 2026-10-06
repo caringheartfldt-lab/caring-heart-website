@@ -35,6 +35,16 @@
 
   nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
+  document.querySelectorAll('[data-placeholder-link]').forEach(link=>{
+    link.addEventListener('click',e=>{
+      e.preventDefault();
+      const msg = root.lang === 'zh-HK'
+        ? '感謝您的支持！正式上線前請連接安全的捐款服務。'
+        : (root.lang === 'zh-CN' ? '感谢您的支持！正式上线前请连接安全的捐赠服务。' : 'Thank you for your support! Connect a secure donation service before launch.');
+      alert(msg);
+    });
+  });
+
   document.querySelectorAll('[data-demo-form]').forEach(form=>{
     form.addEventListener('submit',e=>{
       e.preventDefault();

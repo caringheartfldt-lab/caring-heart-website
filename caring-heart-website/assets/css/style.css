@@ -494,3 +494,8 @@ html.dark .language-picker select{background:var(--surface);color:var(--text);bo
 .contact-info-list a{color:var(--primary-deep);font-weight:700}
 .event-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:22px}
 @media (max-width:720px){.event-detail-grid{grid-template-columns:1fr}}
+
+
+/* Security-friendly utility classes (replaces inline style attributes). */
+.spacer-20{height:20px}
+.notice-top{margin-top:2rem}
