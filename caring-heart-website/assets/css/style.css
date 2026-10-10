@@ -378,7 +378,7 @@ html.dark .brand img,
 html.dark .footer-logo,
 html.dark .hero-logo{
   filter: invert(1) brightness(1.8);
-
+}
 /* Keep the original logo colors, while making its black lettering readable in dark mode. 
 html.dark .brand img,
 html.dark .footer-logo {
